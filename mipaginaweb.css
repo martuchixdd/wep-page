@@ -1,0 +1,150 @@
+@font-face {
+    font-family: aesthetic;
+    src: url(fuentes\ lindas/Childer.otf);
+}
+
+@font-face {
+    font-family: uwuzy;
+    src: url(fuentes\ lindas/HandiesTrial.otf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;}
+
+body{
+    min-height: 100vh;
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+}
+
+.superior{
+    background-color:rgba(218, 125, 140, 0.589);
+    height:200px;
+    display: flex;
+    align-items: flex-end;
+    position:relative;
+    overflow:hidden;
+}
+
+.ini{
+    background-image:url(img/fondini.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:80px;
+    width:160px;
+    font-size: 80px;
+    font-family: aesthetic;
+    margin:10px;
+    padding:5px;
+    border-radius:20px;
+    text-align: center;
+    color:rgb(84, 43, 85)
+}
+    
+button{
+    font-family: aesthetic;
+    font-size:24px;
+    height:60px;   
+    align-items: flex-end;
+    border-radius: 30px;
+    color:pink
+    padding:15px;
+    position:relative;
+    bottom: 20px;
+    background-image: linear-gradient(to right,rgb(207, 233, 243),rgb(250, 206, 213));
+    border:none;
+    transition: transform;
+    transition-duration: 0.3s;
+}
+
+img{
+    height:40px;
+    border:2px rgb(182, 98, 154) solid
+}
+
+ul{
+    display:flex;
+    position:absolute;
+    top:12px;
+    left: 0;
+    width: 100%;
+    max-width:100%;
+    list-style: none;
+    animation-name: mover;
+    animation-duration: 30s;
+    animation-direction: repeat;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;}
+
+.carru{
+    display:flex;
+    position:absolute;
+    top:12px;
+    left: 0px;
+    width: 100%;
+    max-width:100%;
+    list-style: none;
+    animation-name: mover;
+    animation-duration: 100s;
+    animation-direction: repeat;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;}
+
+@keyframes mover{   
+    from{transform: translateX(0);}
+
+    to{transform:translateX(-100%);}
+
+}
+
+button:hover{
+    transform:translateY(-6px);
+    background-image: linear-gradient(to left, rgb(173, 108, 173),rgb(84, 84, 180));
+    color:rgb(238, 219, 191)
+}
+
+nav{
+    display:flex;
+    gap:10px;
+    align-items: end;
+}
+
+footer{
+    color:rgba(62, 16, 92, 0.644);
+    font-size:20px
+}
+
+h1{
+    font-family: uwuzy;
+    text-align:center;
+    position: relative;
+    top: 100px;
+    font-size:40px;
+    color:rgb(160, 86, 138);
+    text-shadow: 2px 2px  rgb(99, 35, 74);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(84, 43, 85)
+}
+
+.informacion{
+    position:relative;
+    top:200px;
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+
+}
+
+.peque{
+    border:2px rgb(248, 126, 187) solid;
+    background-image:linear-gradient(to right,beige,pink);
+    width:400px;
+    height:300px;
+
+}
